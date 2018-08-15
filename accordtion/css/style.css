@@ -1,0 +1,53 @@
+.accordtion {
+    width: 300px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.accordtion-item {
+    margin: none;
+    display: block;
+    background: steelblue;
+    border-bottom: 1px solid paleturquoise;
+}
+.accordtion-trigger {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 10px 10px 10px;  
+    display: block; 
+}
+.accordtion-item .accordtion-trigger:after  {
+    content: '+'; 
+    float: right;
+}
+.accordtion-item.active .accordtion-trigger:after  {
+    content: '−'; 
+}
+.accordtion-trigger .sign {
+    float: right;
+    display: block;
+}
+.accordtion-item li {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 0 10px 20px;  
+    border-bottom: 1px solid steelblue;
+}
+.accordtion-item li:last-child {
+    border-bottom: none;
+}
+.accordtion-panel {
+    background-color: lightsteelblue;
+    display: block;
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordtion-item * {
+    color: whitesmoke;
+}
